@@ -1,2 +1,2 @@
-# coursera-assignment
+# Coursera Assignment
 Web development assignment from Coursera
