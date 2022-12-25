@@ -2,6 +2,13 @@
     box-sizing: border-box;
     text-decoration: none !important;
     outline: none !important;
+    font-size: 1rem;
+}
+
+html {
+    background: linear-gradient(0deg, rgba(200, 255, 240, .85), rgba(200, 255, 240, .85)),
+        url(https://images.pexels.com/photos/87841/ivy-plants-leaves-wall-87841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center center no-repeat;
+    background-size: cover;
 }
 
 body {
@@ -12,8 +19,9 @@ body {
     width: 100%;
     min-height: 100vh;
     margin: 0;
-    padding: 0;
+    padding: 0 30px;
     font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
     color: #424242;
     line-height: 1.618em;
     font-size: 16px;
@@ -28,33 +36,41 @@ header img {
 nav {
     margin: 15px 0;
     padding: 5px 10px;
-    background: #ddd;
+    background: #ded;
     border-radius: 500px;
+    gap: 5px !important;
 }
 
 nav a {
     padding: 5px 15px;
-    color: #424242;
+    color: #464;
     border-radius: 500px;
     transition: .15s;
 }
 
 nav a:hover {
-    background: #424242;
+    background: #464;
     color: #fff;
 }
 
 nav a.active {
-    background: #424242;
+    background: #242;
     color: #fff;
 }
 
 button {
-    padding: 5px 10px;
-    background: #ddd;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background: #ded;
     border: solid 1px #888;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    transition: .15s;
+}
+
+button:hover {
+    background: #464;
+    color: #fff;
 }
 
 footer img {
@@ -82,10 +98,31 @@ footer img {
 }
 
 .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 5px;
     flex: 1;
     min-height: 200px;
-    background: #ddd;
+    background: #ded;
     margin: 0 15px;
+    background: url(https://images.pexels.com/photos/1382393/pexels-photo-1382393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center center no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.banner h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 0 0 50px #000;
+}
+
+.banner p {
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 0 15px #000;
 }
 
 .flex-fluid {
@@ -93,17 +130,35 @@ footer img {
 }
 
 .card {
-    background: #ddd;
+    background: #ded;
     border-radius: 15px;
+}
+
+.card .image {
+    width: 100%;
+    padding-top: 75%;
+    background-size: cover !important;
+    border-radius: 5px 5px 0 0;
+}
+
+.card h3 {
+    margin: 20px 0 10px -15px;
+    padding-left: 5px;
+    font-size: 1.25rem;
+    border-left: solid 10px #464;
+}
+
+.card p {
+    margin: 0 0 15px;
 }
 
 .text-right {
     text-align: right;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     body {
-        width: 800px;
+        width: 1000px;
         margin: 0 auto;
     }
 }
